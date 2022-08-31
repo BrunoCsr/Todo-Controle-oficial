@@ -3,12 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:tdc/pages/AboutSceen.dart';
 import 'package:tdc/pages/AddScreen.dart';
-import 'package:tdc/pages/CarouselSliderContext.dart';
 import 'package:tdc/pages/ConfigurationsScreen.dart';
 import 'package:tdc/pages/ContextsScreen.dart';
 import 'package:tdc/pages/HomeScreen.dart';
-
-import 'pages/TestScreen.dart';
 
 class MyHome extends StatefulWidget {
   const MyHome({Key? key}) : super(key: key);
@@ -29,8 +26,6 @@ class _MyHomeState extends State<MyHome> {
     const ContextsScreen(),
     const ConfigurationsScreen(),
     const AboutScreen(),
-    const TestScreen(),
-    const CarouselSliderContext(),
   ];
 
   int index = 0;
@@ -40,8 +35,6 @@ class _MyHomeState extends State<MyHome> {
     const Icon(Icons.article, size: 30),
     const Icon(Icons.settings, size: 30),
     const Icon(Icons.question_mark, size: 30),
-    const Icon(Icons.question_mark, size: 30),
-    const Icon(Icons.settings, size: 30),
   ];
 
   @override

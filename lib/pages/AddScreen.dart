@@ -135,7 +135,6 @@ class _AddScreenState extends State<AddScreen> {
                           if (nome != '' && contexto != '' && path != '') {
                             Carta carta = Carta(
                               assignedText: nome,
-                              // assignedContext: contexto,
                               path: path,
                             );
                           }

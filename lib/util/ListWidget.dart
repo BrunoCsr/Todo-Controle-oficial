@@ -5,7 +5,9 @@ import 'package:tdc/util/Carta.dart';
 
 class ListWidget extends StatefulWidget {
   final List<Carta> carta;
-  const ListWidget({Key? key, required this.carta}) : super(key: key);
+  final String ctxName;
+  const ListWidget({Key? key, required this.carta, required this.ctxName})
+      : super(key: key);
 
   @override
   State<ListWidget> createState() => _ListWidgetState();
@@ -29,7 +31,7 @@ class _ListWidgetState extends State<ListWidget> {
                   height: double.infinity,
                   width: 150,
                   color: Colors.yellow,
-                  child: Center(child: Text("data")),
+                  child: Center(child: Text(widget.ctxName)),
                 ),
                 Flexible(
                     //permite preencher o restante da Row com o Container filho

@@ -26,39 +26,52 @@ class _CartaState extends State<Carta> {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-        height: 300,
-        width: 180,
-        child: Material(
-          color: Colors.blue,
-          elevation: 8,
-          borderRadius: BorderRadius.circular(25),
-          clipBehavior: Clip.antiAliasWithSaveLayer,
-          child: InkWell(
-              splashColor: darkBlue2,
-              onTap: () async {
-                await flutterTts.awaitSpeakCompletion(true);
-                await flutterTts.speak(widget.assignedText);
-              },
-              child: Column(
-                children: [
-                  Expanded(
-                    child: Ink.image(
-                      image: NetworkImage(widget.path),
-                      //height: 250,
-                      //width: 180,
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                  const SizedBox(height: 25),
-                  Center(
-                    child: Text(
-                      widget.assignedText,
-                      style: const TextStyle(fontSize: 12, color: Colors.black),
-                    ),
-                  )
-                ],
-              )),
-        ));
+    return Row(
+      children: [
+        SizedBox(
+          width: 8,
+        ),
+        SizedBox(
+            height: 300,
+            width: 180,
+            child: Material(
+              color: Colors.blue,
+              elevation: 8,
+              borderRadius: BorderRadius.circular(25),
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: InkWell(
+                  splashColor: darkBlue2,
+                  onTap: () async {
+                    await flutterTts.awaitSpeakCompletion(true);
+                    await flutterTts.speak(widget.assignedText);
+                  },
+                  /* onLongPress: () async {
+                    await flutterTts.pause();
+                  },*/
+                  child: Column(
+                    children: [
+                      Expanded(
+                        child: Ink.image(
+                          image: NetworkImage(widget.path),
+                          //height: 250,
+                          //width: 180,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      const SizedBox(height: 25),
+                      Center(
+                        child: Center(
+                          child: Text(
+                            widget.assignedText,
+                            style: const TextStyle(
+                                fontSize: 12, color: Colors.black),
+                          ),
+                        ),
+                      )
+                    ],
+                  )),
+            )),
+      ],
+    );
   }
 }

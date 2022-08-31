@@ -39,10 +39,6 @@ dependencies:
   flutter_tts: ^3.3.3
   desktop_drop: ^0.3.3
   cross_file: ^0.3.3+1
-  
-  #firebase_storage: ^10.3.3
-  cloud_firestore: ^3.4.0
-  firebase_core: ^1.20.1
 
   carousel_slider: ^4.0.0
 
