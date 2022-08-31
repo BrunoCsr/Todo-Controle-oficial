@@ -32,11 +32,11 @@ class _AboutScreenState extends State<AboutScreen> {
   }
 
   String texto1 =
-      "1. Este aplicativo foi desenvolvido para auxiliar pessoas com dificuldade de fala e de controle motor a se comunicar com maior autonomia. Para pronunciar um texto, basta selecionar a imagem desejada e o conteúdo logo será emitido em voz alta pelo computador. Se pressionar e segurar o botão, o texto deve pausar.";
+      "Este aplicativo foi desenvolvido para auxiliar pessoas com dificuldade de fala e de controle motor a se comunicar com maior autonomia. Para pronunciar um texto, basta selecionar a imagem desejada e o conteúdo logo será emitido em voz alta pelo computador. Se pressionar e segurar o botão, o texto deve pausar.";
   String texto2 =
-      "2. Na tela central estão suas possibilidades de fala. Navegando no sentido vertical, escolhe-se os contextos. Na horizontal, seus respectivos conteúdos.";
+      "Na tela central estão suas possibilidades de fala. Navegando no sentido vertical, escolhe-se os contextos. Na horizontal, seus respectivos conteúdos.";
   String texto3 =
-      "3. É possível adicionar novas cartas de fala. Para isso, navegue até o segundo ícone, preencha as informações necessárias e clique em “Salvar”. As informações logo serão adicionadas à tela central.";
+      "É possível adicionar novas cartas de fala. Para isso, navegue até o segundo ícone, preencha as informações necessárias e clique em “Salvar”. As informações logo serão adicionadas à tela central.";
 
   FlutterTts flutterTts = FlutterTts();
 
@@ -59,15 +59,15 @@ class _AboutScreenState extends State<AboutScreen> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text(texto1),
+                          Text("1.   " + texto1),
                           const SizedBox(
                             height: 15,
                           ),
-                          Text(texto2),
+                          Text("2.   " + texto2),
                           const SizedBox(
                             height: 15,
                           ),
-                          Text(texto3)
+                          Text("3.   " + texto3)
                         ],
                       ),
                     ),
