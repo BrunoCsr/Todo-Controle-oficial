@@ -12,7 +12,6 @@ class AboutScreen extends StatefulWidget {
 }
 
 class _AboutScreenState extends State<AboutScreen> {
-  @override
   TtsState ttsState = TtsState.stopped;
 
   get isPlaying => ttsState == TtsState.playing;
@@ -96,7 +95,7 @@ class _AboutScreenState extends State<AboutScreen> {
                       icon: const Icon(Icons.question_mark),
                       label: const Text("1")),
                 ),
-                Container(
+                SizedBox(
                   height: 100,
                   width: 100,
                   child: ElevatedButton.icon(
