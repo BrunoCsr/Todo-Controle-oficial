@@ -1,17 +1,14 @@
-# tdc
+# Todo Controle
+  Este aplicativo foi desenvolvido para auxiliar pessoas com dificuldade de fala, de controle motor e não alfabetizadas a se comunicar com maior autonomia através de imagens e conversão de texto em fala.
 
-A new Flutter project.
+## Instalação
+  Para utilizar esta aplicação o usuário pode baixar o código a partir deste repositório e rodar a aplicação através do terminal. Também será necessário instalar o framework do Flutter. Isso pode ser feito em [Flutter SDK](https://docs.flutter.dev/get-started/install).Não se esqueça de adicionar o Flutter às variáveis de ambiente.
+  No terminal, abra a pasta desta aplicação, escreva "flutter run" e, em seguida, pressione "2" para utilizar o Chrome.
+  Uma guia do Chrome deve ser aberta com a aplicação.
+  
+ ## Como utilizar
+  A aplicação é composta por cinco páginas pelas quais você pode navegar utilizando a barra de ferramentas.
+  Clicando no ícone central o usuário entra na página de Cartas. Cada uma está inserida em um contexto, como higiene, refeições etc. As Cartas contém um texto descritivo e uma imagem que funciona como um botão. Quando clicado, o computador pronuncia o texto designado.
+  É possível adicionar mais Cartas na segunda página. Adicione as informações, arraste uma imagem para o local especificado e clique em "salvar". A imagem deve ser direcionada para a página central.
+  Além disso, na última página existem mais informações sobre como utilizar a aplicação. Clique sobre os botões para ouvir o texto.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-"# Todo-Controle-nao-oficial-" 
