@@ -4,7 +4,7 @@
 ## Instalação
   Para utilizar esta aplicação o usuário pode baixar o código a partir deste repositório e rodar a aplicação através do terminal. Também será necessário instalar o framework do Flutter. Isso pode ser feito em [Flutter SDK](https://docs.flutter.dev/get-started/install).Não se esqueça de adicionar o Flutter às variáveis de ambiente.
   No terminal, abra a pasta desta aplicação, escreva "flutter run" e, em seguida, pressione "2" para utilizar o Chrome.
-  Uma guia do Chrome deve ser aberta com a aplicação.
+  Uma guia do Chrome deve ser aberta com a aplicação. Se tiver algum problema, tente rodar também "flutter pub get".
   
  ## Como utilizar
   A aplicação é composta por cinco páginas pelas quais você pode navegar utilizando a barra de ferramentas.
