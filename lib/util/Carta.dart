@@ -51,13 +51,14 @@ class _CartaState extends State<Carta> {
                   child: Column(
                     children: [
                       Expanded(
-                        child: Ink.image(
-                          image: NetworkImage(widget.path),
-                          //height: 250,
-                          //width: 180,
+                          child: Container(
+                        height: 300,
+                        width: 1801,
+                        child: Image(
+                          image: AssetImage(widget.path),
                           fit: BoxFit.cover,
                         ),
-                      ),
+                      )),
                       const SizedBox(height: 25),
                       Center(
                         child: Center(
